@@ -77,50 +77,40 @@ body {
     object-fit: contain;
      /* Reduce height by 40px (20px top + 20px bottom)max-height: calc(100% - 40px); */
 }
-
-/* Style for the text at the bottom of the purple square */
-.bottom-text {
+#bottom-text {
     width: 100%;
     text-align: center;
     color: white;
     margin-top: 20px; /* Adjust margin as needed */
-    font-size: 24px; /* Increase font size */
+    font-size: 24px; /* Adjust font size as needed */
     font-family: 'Arial', sans-serif; /* Change font style */
-    font-weight: bold; /* Make text bold */
+    font-weight: bold; /* Adjust font weight as needed */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
     position: absolute;
     top: calc(50% + 180px); /* Position text below the purple square */
     left: 50%;
     transform: translateX(-50%);
 }
-
-
-    /* Hamburger menu icon */
-.menu-icon {
-    position: fixed;
-    top: 20px;
-    left: 20px;
+/* Style for the text at the bottom of the purple square */
+/* Hide the default button styles */
+/* Hide the default button styles */
+button#bottom-text {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 24px; /* Adjust font size as needed */
+    font-family: 'Arial', sans-serif; /* Change font style */
+    font-weight: bold; /* Adjust font weight as needed */
     cursor: pointer;
-    z-index: 1000; /* Ensure it's above other content */
 }
 
-.menu-icon .bar {
-    width: 30px;
-    height: 3px;
-    background-color: #ffffff;
-    margin: 6px 0;
-    transition: 0.4s;
+/* Ensure only the text is visible */
+button#bottom-text {
+    color: #ffffff; /* Adjust text color as needed */
+    text-decoration: none; /* Add underline for better visibility */
 }
 
-/* Hamburger icon animation */
-.menu-icon.active .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.menu-icon.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-icon.active .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
+/* Optional: Hover effect for text */
+button#bottom-text:hover {
+    text-decoration: none; /* Remove underline on hover if desired */
 }
