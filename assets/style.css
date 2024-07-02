@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+}
+/* CSS to style the purple square */
+.purple-square {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(182, 72, 206);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+    .purple-square {
+        width: 250px; /* Adjust size for smaller screens */
+        height: 250px; /* Adjust size for smaller screens */
+    }}
+
+    /* Hamburger menu icon */
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.menu-icon .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Hamburger icon animation */
+.menu-icon.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
